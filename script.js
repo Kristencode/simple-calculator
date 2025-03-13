@@ -17,7 +17,6 @@ btnOne.addEventListener("click", function () {
     let sum = Number(firstNum) + Number(secondNum);
     message.innerText = `${sum}`;
   }
-
 });
 
 btnTwo.addEventListener("click", function () {
@@ -53,6 +52,8 @@ btnThree.addEventListener("click", function () {
 });
 
 reset.addEventListener("click", function clearInput() {
-
+  document.getElementById("firstNum").value = "";
+  document.getElementById("secondNum").value = "";
+  document.getElementById("message").innerText = "";
 });
  
